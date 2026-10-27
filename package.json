@@ -1,26 +1,12 @@
 {
-  "name": "my-git-project",
+  "name": "pipeline-trap-example",
   "version": "1.0.0",
-  "description": "A sample Node.js project hosted on Git",
-  "main": "index.js",
-  "type": "module",
   "scripts": {
-    "start": "node index.js",
-    "test": "echo \"Error: no test specified\" && exit 0"
+    "lint": "eslint .",
+    "test": "jest"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com"
-  },
-  "keywords": [
-    "git",
-    "node",
-    "example"
-  ],
-  "author": "Your Name <you@example.com>",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com"
-  },
-  "homepage": "https://github.com"
+  "devDependencies": {
+    "eslint": "^8.0.0",
+    "jest": "^29.0.0"
+  }
 }
